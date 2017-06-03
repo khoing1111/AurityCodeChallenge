@@ -1,6 +1,7 @@
 {
   "name": "AurityCodeChallenge",
   "image": "heroku/nodejs",
+  "repository": "https://github.com/khoing1111/AurityCodeChallenge.git",
   "keywords": ["node", "react", "heroku"],
   "scripts": {
   },
