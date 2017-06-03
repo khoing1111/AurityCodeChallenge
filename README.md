@@ -7,11 +7,10 @@ INSTALL:
 
 2. Instlal build essential tool (Contain npm)
     $sudo apt-get install -y build-essential
-
-BEFORE DEPLOY:
-- Run command
-    $npm run build
     
 DEPLOY:
-- Run command
+1. Build jsx assets
+    $npm run build
+
+2. Deploy to port 8080
     $npm run deploy
