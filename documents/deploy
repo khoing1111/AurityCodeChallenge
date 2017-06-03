@@ -1,0 +1,5 @@
+In app folder. Run command
+    node main.js
+
+or
+    npm run deploy

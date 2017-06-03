@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AURITY CODE CHALLENGE</title>
+
+    <!-- React client side -->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+
+    <!-- Application scripts -->
+    <script type="text/javascript" src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/utils.js"></script>
+    <script type="text/javascript" src="/static/js/components.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+
+    <!-- Application style -->
+    <link rel="stylesheet" href="/static/css/themes/{{ theme }}/main.css">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="/static/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script>
+        var globalData = {
+            year: {{ year }},
+            month: {{ month }},
+            userId: {{ userId }},
+            userData: {{& userData }},
+            userList: {{& userList }}
+        }
+    </script>
+</head>
+<body>
+    <div id="content-wrapper">
+        <div id="react-root"></div>
+    </div>
+</body>
+</html>

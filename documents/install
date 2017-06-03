@@ -1,0 +1,22 @@
+1. Install NodeJS (6.x version)
+    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+
+2. Instlal build essential tool (Contain npm)
+    sudo apt-get install -y build-essential
+
+3. In app directory:
+    - Init application
+        npm init
+    - Install react
+        npm install --save react react-dom
+    - Install babel (To compile jsx code)
+        npm install --save-dev babel-core
+    - Setup babel preset (react and es2015)
+        npm install --save-dev babel-cli babel-preset-react
+        npm install --save-dev babel-cli babel-preset-es2015
+        echo '{ "presets": ["react", "es2015"] }' > .babelrc
+    - In package.json. Add script build babel to compile jsx to pure javascript
+        "scripts": { "build": "babel assets/jsx -d static/js" }
+    - Install Mustache template engine
+        npm install mu2

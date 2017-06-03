@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: antiquewhite;
+    font-family: roboto;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*****************************************************************************************************************************************************
+ * BASE
+ */
+#base-form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 0px 30px;
+    background: #ebfffe;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+}
+
+#app-title-wrapper {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: darkcyan;
+}
+
+/*****************************************************************************************************************************************************
+ * CALENDAR
+ */
+#calendar-wrapper table th.controll {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#calendar-wrapper table th.controll:hover {
+    color: #7878ff;
+}
+
+#calendar-wrapper a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#calendar-wrapper table th.month-name-title {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+#calendar-wrapper table {
+    width: 100%;
+    cursor: pointer;
+}
+
+#calendar-wrapper table td {
+    padding: 0px;
+    width: 14.29%;
+    height: 50px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+#calendar-wrapper table tr:hover td {
+    border-top: 1px solid #054205;
+    background: #d1fffd;
+}
+
+#calendar-wrapper table tr:hover td:hover {
+    background: #c0f1ef;
+}
+
+#calendar-wrapper table th {
+    color: darkgreen;
+    font-size: 13px;
+}
+
+.calendar-day-wrapper {
+    padding: 15px;
+}
+
+.calendar-day-wrapper.not-active {
+    opacity: 0.4;
+}
+
+.work-hours {
+    float: right;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.work-hours.approved {
+    color: #23de23;
+}
+
+.work-hours.rejected {
+    color: #e64848;
+}
+
+.work-hours.waiting {
+    color: #6060ea;
+}
+
+.work-hours.undefined {
+    color: darkcyan;
+}
+
+.calendar-day-wrapper .date {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#calendar-wrapper input.hidden {
+    display:none;
+}
+
+
+#calendar-wrapper table tr.week-row-selected td {
+    background: antiquewhite;
+}
+
+/*****************************************************************************************************************************************************
+ * HELPER
+ */
+.marker {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    color: white;
+}
+
+.marker-approved {
+    background: #23de23;
+}
+
+.marker-rejected {
+    background: #e64848;
+}
+
+.marker-waiting {
+    background: #6060ea;
+}
+
+#helper-wrapper td {
+    padding: 20px;
+}
+
+#helper-wrapper .marker {
+    margin-bottom: 10px;
+}
+
+/*****************************************************************************************************************************************************
+ * CONTROLLER
+ */
+#controll-wrapper {
+    margin-top: 25px;
+}
+
+#controll-wrapper table {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+#controll-wrapper table td {
+    padding: 0px;
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    color: darkgreen;
+}
+
+#controll-wrapper table td:hover {
+    font-weight: bold;
+}
+
+
+/*****************************************************************************************************************************************************
+ * USER INPUT
+ */
+#user-input-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#user-input-wrapper select {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+    font-size: 15px;
+    margin: 15px;
+    font-weight: bold;
+
+    background: #ebfffe;                                                    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #ebfffe, #fffcf7, #ebfffe);   /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #ebfffe, #fffcf7, #ebfffe);        /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #ebfffe, #fffcf7, #ebfffe);      /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, #ebfffe, #fffcf7, #ebfffe);       /* Standard syntax */
+}
+
+
+/*****************************************************************************************************************************************************
+ * NOTIFICATION POPUP
+ */
+#notification-popup.hidden {
+    display: none;
+}
+
+#notification-curtain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+#notification-body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    background: white;
+    margin-top: -100px;
+    margin-left: -150px;
+    box-shadow: 0px 0px 5px 1px #946b6b;
+}
+
+#notification-message {
+    text-align: center;
+    position: relative;
+    top: 35%;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: darkgreen;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Aurity code challenge",
+  "main": "main.js",
+  "scripts": {
+    "build": "sudo rm -rf static/js/* && babel assets/jsx -d static/js",
+    "deploy": "node main.js"
+  },
+  "keywords": [
+    "Nodejs",
+    "react",
+    "redux",
+    "mustache..."
+  ],
+  "author": "Nguyen Hoang Khoi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
+}
