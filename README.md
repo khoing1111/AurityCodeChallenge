@@ -9,9 +9,9 @@ INSTALL:
     $sudo apt-get install -y build-essential
 
 BEFORE DEPLOY:
-Run command
+- Run command
     $npm run build
     
 DEPLOY:
-Run command
+- Run command
     $npm run deploy
