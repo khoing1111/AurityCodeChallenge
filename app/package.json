@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "build": "sudo rm -rf static/js/* && babel assets/jsx -d static/js",
-    "deploy": "node main.js"
+    "deploy": "node main.js",
+    "start": "node main.js"
   },
   "keywords": [
     "Nodejs",
