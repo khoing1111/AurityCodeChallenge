@@ -27,7 +27,7 @@ class BaseForm extends React.Component {
     closeNotification() {
         this.setState({
             notificationDisplay:    'hidden'
-        })
+        });
     }
 
     render() {
@@ -417,7 +417,7 @@ class NotificationPopup extends React.Component {
     componentDidMount() {
         this.timer = setInterval(
             () => this.tick(),
-            1000
+            500
         );
     }
 

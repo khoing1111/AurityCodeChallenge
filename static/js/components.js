@@ -692,7 +692,7 @@ var NotificationPopup = function (_React$Component9) {
 
             this.timer = setInterval(function () {
                 return _this11.tick();
-            }, 1000);
+            }, 500);
         }
     }, {
         key: 'componentWillUnmount',
