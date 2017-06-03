@@ -1,5 +1,7 @@
 {
   "name": "AurityCodeChallenge",
+  "image": "heroku/nodejs",
+  "keywords": ["node", "react", "heroku"],
   "scripts": {
   },
   "env": {

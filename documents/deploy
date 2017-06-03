@@ -3,3 +3,6 @@ In app folder. Run command
 
 or
     npm run deploy
+
+Heroku app:
+    https://serene-earth-91700.herokuapp.com/
