@@ -27,5 +27,13 @@
   },
   "engines": {
     "node": "5.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khoing1111/AurityCodeChallenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khoing1111/AurityCodeChallenge/issues"
+  },
+  "homepage": "https://github.com/khoing1111/AurityCodeChallenge#readme"
 }
