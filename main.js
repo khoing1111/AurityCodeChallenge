@@ -18,11 +18,17 @@ const globalData = {
     apiHost: 'https://timesheet-staging-aurity.herokuapp.com/api/'
 }
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var appPort = process.env.PORT || 8080;
+
 
 /////////////
 // PROCESS
 // Main server
 var server = http.createServer(function (request, response) {
+    console.log("Start at port " + appPort);
+
     // Parse url
     var requestUrl = url.parse(request.url).pathname;
 
@@ -197,4 +203,4 @@ server.on('error', (error, socket) => {
     socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
 });
 
-server.listen(8080);
+server.listen(appPort);
