@@ -2,15 +2,23 @@
 
 INSTALL:
 1. Install NodeJS (6.x version)
-    $curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-    $sudo apt-get install -y nodejs
+```console
+$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+```
 
 2. Instlal build essential tool (Contain npm)
-    $sudo apt-get install -y build-essential
+```console
+$ sudo apt-get install -y build-essential 
+```
     
 DEPLOY:
 1. Build jsx assets
-    $npm run build
+```console
+$ npm run build
+```
 
 2. Deploy to port 8080
-    $npm run deploy
+```console
+$ npm run deploy
+```
